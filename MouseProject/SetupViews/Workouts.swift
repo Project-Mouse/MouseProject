@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct Workouts: View {
+    @State private var selectedNumber: Int = 1
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Text("How often do you want to workout?")
+            .font(.title)
+            .bold()
+        
+        Text("Selected Number: \(selectedNumber)")
+        
+        HStack(spacing: 20) {
+            ForEach(1..<4) { number in
+                Circle()
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(selectedNumber == number ? .green : .gray)
+                    .overlay(
+                        Text("\(number)")
+                            .foregroundColor(.white)
+                            .font(.largeTitle)
+                    )
+                    .onTapGesture {
+                        selectedNumber = number
+                    }
+            
+            }
+        }
+        .padding()
     }
 }
 
