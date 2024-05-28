@@ -1,18 +1,18 @@
 //
-//  FeelGoodScoreView.swift
+//  GetStarted.swift
 //  MouseProject
 //
-//  Created by Imran razak on 22/05/2024.
+//  Created by Imran razak on 28/05/2024.
 //
 
 import SwiftUI
 
-struct FeelGoodScoreView: View {
+struct GetStarted: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    FeelGoodScoreView()
+    GetStarted()
 }
