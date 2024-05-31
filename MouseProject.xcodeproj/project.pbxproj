@@ -10,30 +10,66 @@
 		B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015462BFBBEED0095A695 /* MouseProjectApp.swift */; };
 		B630154B2BFBBEEF0095A695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154A2BFBBEEF0095A695 /* Assets.xcassets */; };
 		B630154E2BFBBEEF0095A695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154D2BFBBEEF0095A695 /* Preview Assets.xcassets */; };
-		B63015552BFBC2C40095A695 /* WhatisFSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015482BFBBEED0095A695 /* WhatisFSG.swift */; };
-		B63015572BFBC2ED0095A695 /* PersonalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015562BFBC2ED0095A695 /* PersonalDetails.swift */; };
-		B63015592BFBC70A0095A695 /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015582BFBC70A0095A695 /* Workouts.swift */; };
-		B630155B2BFBC8E20095A695 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630155A2BFBC8E20095A695 /* Permissions.swift */; };
-		B630155D2BFBCB6D0095A695 /* FSGScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630155C2BFBCB6D0095A695 /* FSGScore.swift */; };
 		B63015602BFBCCF40095A695 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630155F2BFBCCF40095A695 /* LoginView.swift */; };
 		B63015632BFBCDC20095A695 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B63015622BFBCDC20095A695 /* FirebaseAuth */; };
 		B63015652BFBCDF50095A695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63015642BFBCDF50095A695 /* GoogleService-Info.plist */; };
 		B63015682BFBCEDB0095A695 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015672BFBCEDB0095A695 /* AuthManager.swift */; };
+		B630156B2BFE418D0095A695 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630156A2BFE418D0095A695 /* HomeView.swift */; };
+		B630157E2C06283B0095A695 /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630157D2C06283B0095A695 /* RunView.swift */; };
+		B63015802C0635FC0095A695 /* CuratedRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630157F2C0635FC0095A695 /* CuratedRun.swift */; };
+		B63015882C0638890095A695 /* DetailRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015872C0638890095A695 /* DetailRunView.swift */; };
+		B630158A2C0660C80095A695 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015892C0660C80095A695 /* WelcomeView.swift */; };
+		B630158C2C06643E0095A695 /* RollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630158B2C06643E0095A695 /* RollingView.swift */; };
+		B630158E2C06669C0095A695 /* ChooseGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630158D2C06669C0095A695 /* ChooseGoal.swift */; };
+		B63015902C0669540095A695 /* ChooseTrainingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630158F2C0669540095A695 /* ChooseTrainingPlan.swift */; };
+		B63015922C066BBE0095A695 /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015912C066BBE0095A695 /* GetStarted.swift */; };
+		B63015942C066DD80095A695 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015932C066DD80095A695 /* HomeHeader.swift */; };
+		B63015962C06773B0095A695 /* TrainingPlanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015952C06773B0095A695 /* TrainingPlanItem.swift */; };
+		B63015982C07428E0095A695 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015972C07428E0095A695 /* DataResponse.swift */; };
+		B630159B2C0745700095A695 /* GraphQLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630159A2C0745700095A695 /* GraphQLResult.swift */; };
+		B630159D2C0745940095A695 /* GraphQLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630159C2C0745940095A695 /* GraphQLAPI.swift */; };
+		B630159F2C0745C00095A695 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630159E2C0745C00095A695 /* APIService.swift */; };
+		B63015A12C0745DB0095A695 /* URLSession+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A02C0745DB0095A695 /* URLSession+Async.swift */; };
+		B63015A32C07460D0095A695 /* GraphQLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A22C07460D0095A695 /* GraphQLOperation.swift */; };
+		B63015A62C0774370095A695 /* StepCountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A52C0774370095A695 /* StepCountViewModel.swift */; };
+		B63015AB2C0779B50095A695 /* HealthPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AA2C0779B50095A695 /* HealthPermission.swift */; };
+		B63015AE2C077DBB0095A695 /* PermissionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AD2C077DBB0095A695 /* PermissionDetails.swift */; };
+		B63015B02C0799C10095A695 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AF2C0799C10095A695 /* LocationViewModel.swift */; };
+		B63015B52C0A5C4E0095A695 /* TrainingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015B42C0A5C4E0095A695 /* TrainingPlan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B63015432BFBBEED0095A695 /* MouseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63015462BFBBEED0095A695 /* MouseProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseProjectApp.swift; sourceTree = "<group>"; };
-		B63015482BFBBEED0095A695 /* WhatisFSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatisFSG.swift; sourceTree = "<group>"; };
 		B630154A2BFBBEEF0095A695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B630154D2BFBBEEF0095A695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B63015562BFBC2ED0095A695 /* PersonalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails.swift; sourceTree = "<group>"; };
-		B63015582BFBC70A0095A695 /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
-		B630155A2BFBC8E20095A695 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
-		B630155C2BFBCB6D0095A695 /* FSGScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSGScore.swift; sourceTree = "<group>"; };
 		B630155F2BFBCCF40095A695 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B63015642BFBCDF50095A695 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B63015672BFBCEDB0095A695 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B630156A2BFE418D0095A695 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B630157D2C06283B0095A695 /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
+		B630157F2C0635FC0095A695 /* CuratedRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedRun.swift; sourceTree = "<group>"; };
+		B63015872C0638890095A695 /* DetailRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRunView.swift; sourceTree = "<group>"; };
+		B63015892C0660C80095A695 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B630158B2C06643E0095A695 /* RollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingView.swift; sourceTree = "<group>"; };
+		B630158D2C06669C0095A695 /* ChooseGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGoal.swift; sourceTree = "<group>"; };
+		B630158F2C0669540095A695 /* ChooseTrainingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTrainingPlan.swift; sourceTree = "<group>"; };
+		B63015912C066BBE0095A695 /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
+		B63015932C066DD80095A695 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		B63015952C06773B0095A695 /* TrainingPlanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPlanItem.swift; sourceTree = "<group>"; };
+		B63015972C07428E0095A695 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
+		B630159A2C0745700095A695 /* GraphQLResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLResult.swift; sourceTree = "<group>"; };
+		B630159C2C0745940095A695 /* GraphQLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLAPI.swift; sourceTree = "<group>"; };
+		B630159E2C0745C00095A695 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B63015A02C0745DB0095A695 /* URLSession+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Async.swift"; sourceTree = "<group>"; };
+		B63015A22C07460D0095A695 /* GraphQLOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLOperation.swift; sourceTree = "<group>"; };
+		B63015A52C0774370095A695 /* StepCountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountViewModel.swift; sourceTree = "<group>"; };
+		B63015A92C0778D00095A695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B63015AA2C0779B50095A695 /* HealthPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPermission.swift; sourceTree = "<group>"; };
+		B63015AC2C077C280095A695 /* MouseProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MouseProject.entitlements; sourceTree = "<group>"; };
+		B63015AD2C077DBB0095A695 /* PermissionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDetails.swift; sourceTree = "<group>"; };
+		B63015AF2C0799C10095A695 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		B63015B42C0A5C4E0095A695 /* TrainingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +104,13 @@
 		B63015452BFBBEED0095A695 /* MouseProject */ = {
 			isa = PBXGroup;
 			children = (
+				B63015AC2C077C280095A695 /* MouseProject.entitlements */,
+				B63015A92C0778D00095A695 /* Info.plist */,
 				B63015462BFBBEED0095A695 /* MouseProjectApp.swift */,
+				B63015712BFE59CC0095A695 /* Models */,
+				B630157C2BFE7C0A0095A695 /* Setup */,
 				B630155E2BFBCCE60095A695 /* Utilities */,
-				B63015542BFBC2AB0095A695 /* SetupViews */,
+				B63015692BFE41760095A695 /* Home */,
 				B630154A2BFBBEEF0095A695 /* Assets.xcassets */,
 				B630154C2BFBBEEF0095A695 /* Preview Content */,
 			);
@@ -83,18 +123,6 @@
 				B630154D2BFBBEEF0095A695 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B63015542BFBC2AB0095A695 /* SetupViews */ = {
-			isa = PBXGroup;
-			children = (
-				B63015482BFBBEED0095A695 /* WhatisFSG.swift */,
-				B63015562BFBC2ED0095A695 /* PersonalDetails.swift */,
-				B63015582BFBC70A0095A695 /* Workouts.swift */,
-				B630155A2BFBC8E20095A695 /* Permissions.swift */,
-				B630155C2BFBCB6D0095A695 /* FSGScore.swift */,
-			);
-			path = SetupViews;
 			sourceTree = "<group>";
 		};
 		B630155E2BFBCCE60095A695 /* Utilities */ = {
@@ -112,6 +140,89 @@
 				B63015672BFBCEDB0095A695 /* AuthManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		B63015692BFE41760095A695 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B63015832C0638470095A695 /* RunView */,
+				B630156E2BFE597F0095A695 /* Shelves */,
+				B630156A2BFE418D0095A695 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B630156E2BFE597F0095A695 /* Shelves */ = {
+			isa = PBXGroup;
+			children = (
+				B630157D2C06283B0095A695 /* RunView.swift */,
+				B630157F2C0635FC0095A695 /* CuratedRun.swift */,
+				B63015932C066DD80095A695 /* HomeHeader.swift */,
+			);
+			path = Shelves;
+			sourceTree = "<group>";
+		};
+		B63015712BFE59CC0095A695 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B63015B12C0A3B090095A695 /* Data */,
+				B63015992C07453F0095A695 /* CDN */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B630157C2BFE7C0A0095A695 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				B63015A42C0773DA0095A695 /* Permissions */,
+				B63015892C0660C80095A695 /* WelcomeView.swift */,
+				B630158B2C06643E0095A695 /* RollingView.swift */,
+				B63015AD2C077DBB0095A695 /* PermissionDetails.swift */,
+				B63015AA2C0779B50095A695 /* HealthPermission.swift */,
+				B630158D2C06669C0095A695 /* ChooseGoal.swift */,
+				B630158F2C0669540095A695 /* ChooseTrainingPlan.swift */,
+				B63015952C06773B0095A695 /* TrainingPlanItem.swift */,
+				B63015912C066BBE0095A695 /* GetStarted.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		B63015832C0638470095A695 /* RunView */ = {
+			isa = PBXGroup;
+			children = (
+				B63015872C0638890095A695 /* DetailRunView.swift */,
+			);
+			path = RunView;
+			sourceTree = "<group>";
+		};
+		B63015992C07453F0095A695 /* CDN */ = {
+			isa = PBXGroup;
+			children = (
+				B63015972C07428E0095A695 /* DataResponse.swift */,
+				B630159A2C0745700095A695 /* GraphQLResult.swift */,
+				B630159C2C0745940095A695 /* GraphQLAPI.swift */,
+				B630159E2C0745C00095A695 /* APIService.swift */,
+				B63015A02C0745DB0095A695 /* URLSession+Async.swift */,
+				B63015A22C07460D0095A695 /* GraphQLOperation.swift */,
+			);
+			path = CDN;
+			sourceTree = "<group>";
+		};
+		B63015A42C0773DA0095A695 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				B63015A52C0774370095A695 /* StepCountViewModel.swift */,
+				B63015AF2C0799C10095A695 /* LocationViewModel.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		B63015B12C0A3B090095A695 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B63015B42C0A5C4E0095A695 /* TrainingPlan.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,14 +302,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B630155B2BFBC8E20095A695 /* Permissions.swift in Sources */,
+				B63015802C0635FC0095A695 /* CuratedRun.swift in Sources */,
+				B63015A12C0745DB0095A695 /* URLSession+Async.swift in Sources */,
+				B630156B2BFE418D0095A695 /* HomeView.swift in Sources */,
+				B63015AB2C0779B50095A695 /* HealthPermission.swift in Sources */,
+				B630158A2C0660C80095A695 /* WelcomeView.swift in Sources */,
+				B630157E2C06283B0095A695 /* RunView.swift in Sources */,
+				B63015942C066DD80095A695 /* HomeHeader.swift in Sources */,
+				B63015B02C0799C10095A695 /* LocationViewModel.swift in Sources */,
 				B63015682BFBCEDB0095A695 /* AuthManager.swift in Sources */,
 				B63015602BFBCCF40095A695 /* LoginView.swift in Sources */,
-				B630155D2BFBCB6D0095A695 /* FSGScore.swift in Sources */,
-				B63015552BFBC2C40095A695 /* WhatisFSG.swift in Sources */,
+				B630158C2C06643E0095A695 /* RollingView.swift in Sources */,
+				B630159B2C0745700095A695 /* GraphQLResult.swift in Sources */,
+				B63015962C06773B0095A695 /* TrainingPlanItem.swift in Sources */,
+				B63015902C0669540095A695 /* ChooseTrainingPlan.swift in Sources */,
+				B63015AE2C077DBB0095A695 /* PermissionDetails.swift in Sources */,
 				B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */,
-				B63015572BFBC2ED0095A695 /* PersonalDetails.swift in Sources */,
-				B63015592BFBC70A0095A695 /* Workouts.swift in Sources */,
+				B63015B52C0A5C4E0095A695 /* TrainingPlan.swift in Sources */,
+				B63015A62C0774370095A695 /* StepCountViewModel.swift in Sources */,
+				B63015922C066BBE0095A695 /* GetStarted.swift in Sources */,
+				B630159D2C0745940095A695 /* GraphQLAPI.swift in Sources */,
+				B63015882C0638890095A695 /* DetailRunView.swift in Sources */,
+				B630159F2C0745C00095A695 /* APIService.swift in Sources */,
+				B630158E2C06669C0095A695 /* ChooseGoal.swift in Sources */,
+				B63015982C07428E0095A695 /* DataResponse.swift in Sources */,
+				B63015A32C07460D0095A695 /* GraphQLOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,17 +457,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MouseProject/MouseProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MouseProject/Preview Content\"";
 				DEVELOPMENT_TEAM = M8VYRKA2RH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MouseProject/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to read your steps count for your Feel Good Points";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location whilst you are running to trace and display weather.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,9 +481,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ImranRazak.MouseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,17 +496,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MouseProject/MouseProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MouseProject/Preview Content\"";
 				DEVELOPMENT_TEAM = M8VYRKA2RH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MouseProject/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to read your steps count for your Feel Good Points";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location whilst you are running to trace and display weather.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,9 +520,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ImranRazak.MouseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

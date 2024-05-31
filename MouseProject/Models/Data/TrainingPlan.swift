@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import SwiftData
+
+
+@Model
+class TrainingPlan {
+    var selectedGoal: String
+    var planName: String
+    
+    init(selectedGoal: String, planName: String) {
+        self.selectedGoal = selectedGoal
+        self.planName = planName
+    }
+}

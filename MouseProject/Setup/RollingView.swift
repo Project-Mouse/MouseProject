@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//App Permissions
+
 struct RollingView: View {
     @State private var currentTextIndex = 0
     @State private var opacity: Double = 1.0

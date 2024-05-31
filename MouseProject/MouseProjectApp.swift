@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseCore
+import SwiftData
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -23,7 +24,8 @@ struct MouseProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            WhatisFSG()
+            HomeView()
+                .modelContainer(for: TrainingPlan.self)
         }
     }
 }

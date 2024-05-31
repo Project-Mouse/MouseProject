@@ -8,11 +8,43 @@
 import SwiftUI
 
 struct RunView: View {
+    let imageName: String
+    let title: String
+    let duration: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+                if let uiImage = UIImage(named: imageName) {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .frame(width: 180, height: 160)
+                        .cornerRadius(10)
+                } else {
+                    Rectangle()
+                        .fill(Color.gray)
+                        .frame(width: 80, height: 80)
+                        .cornerRadius(10)
+                }
+            
+            VStack(alignment: .leading) {
+                Text(title)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                Text(duration)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            Spacer()
+      
+        }
+        .padding(.leading)
+        
+        
+        //.padding(.vertical)
+        .padding(.leading)
     }
 }
 
 #Preview {
-    RunView()
+    RunView(imageName: "Run", title: "Testing Run", duration: "10 mins")
 }
