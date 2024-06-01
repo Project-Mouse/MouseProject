@@ -39,7 +39,7 @@ struct HealthPermissionView: View {
         }
         .padding()
         .fullScreenCover(isPresented: $showNextView) {
-            ChooseGoal()
+            GoalPicker()
         }
     }
 }

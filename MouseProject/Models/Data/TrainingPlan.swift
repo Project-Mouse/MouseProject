@@ -12,10 +12,12 @@ import SwiftData
 @Model
 class TrainingPlan {
     var selectedGoal: String
-    var planName: String
+    var planIdentifier: Int
+    var startDate: Date
     
-    init(selectedGoal: String, planName: String) {
+    init(selectedGoal: String, planIdentifier: Int, startDate: Date) {
         self.selectedGoal = selectedGoal
-        self.planName = planName
+        self.planIdentifier = planIdentifier
+        self.startDate = startDate
     }
 }

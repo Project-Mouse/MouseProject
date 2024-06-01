@@ -14,14 +14,11 @@
 		B63015632BFBCDC20095A695 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B63015622BFBCDC20095A695 /* FirebaseAuth */; };
 		B63015652BFBCDF50095A695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63015642BFBCDF50095A695 /* GoogleService-Info.plist */; };
 		B63015682BFBCEDB0095A695 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015672BFBCEDB0095A695 /* AuthManager.swift */; };
-		B630156B2BFE418D0095A695 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630156A2BFE418D0095A695 /* HomeView.swift */; };
 		B630157E2C06283B0095A695 /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630157D2C06283B0095A695 /* RunView.swift */; };
 		B63015802C0635FC0095A695 /* CuratedRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630157F2C0635FC0095A695 /* CuratedRun.swift */; };
 		B63015882C0638890095A695 /* DetailRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015872C0638890095A695 /* DetailRunView.swift */; };
 		B630158A2C0660C80095A695 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015892C0660C80095A695 /* WelcomeView.swift */; };
 		B630158C2C06643E0095A695 /* RollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630158B2C06643E0095A695 /* RollingView.swift */; };
-		B630158E2C06669C0095A695 /* ChooseGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630158D2C06669C0095A695 /* ChooseGoal.swift */; };
-		B63015902C0669540095A695 /* ChooseTrainingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630158F2C0669540095A695 /* ChooseTrainingPlan.swift */; };
 		B63015922C066BBE0095A695 /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015912C066BBE0095A695 /* GetStarted.swift */; };
 		B63015942C066DD80095A695 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015932C066DD80095A695 /* HomeHeader.swift */; };
 		B63015962C06773B0095A695 /* TrainingPlanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015952C06773B0095A695 /* TrainingPlanItem.swift */; };
@@ -36,6 +33,11 @@
 		B63015AE2C077DBB0095A695 /* PermissionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AD2C077DBB0095A695 /* PermissionDetails.swift */; };
 		B63015B02C0799C10095A695 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AF2C0799C10095A695 /* LocationViewModel.swift */; };
 		B63015B52C0A5C4E0095A695 /* TrainingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015B42C0A5C4E0095A695 /* TrainingPlan.swift */; };
+		B63015B72C0A71A60095A695 /* WeeklyRuns.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015B62C0A71A60095A695 /* WeeklyRuns.swift */; };
+		B6762E3F2C0B7E01004DE857 /* GoalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E3E2C0B7E01004DE857 /* GoalPicker.swift */; };
+		B6762E412C0B8144004DE857 /* PlanPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E402C0B8144004DE857 /* PlanPicker.swift */; };
+		B6762E432C0B9D62004DE857 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E422C0B9D62004DE857 /* HomeView.swift */; };
+		B6762E452C0BBA85004DE857 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E442C0BBA85004DE857 /* TrackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,14 +48,11 @@
 		B630155F2BFBCCF40095A695 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B63015642BFBCDF50095A695 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B63015672BFBCEDB0095A695 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
-		B630156A2BFE418D0095A695 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B630157D2C06283B0095A695 /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
 		B630157F2C0635FC0095A695 /* CuratedRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedRun.swift; sourceTree = "<group>"; };
 		B63015872C0638890095A695 /* DetailRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRunView.swift; sourceTree = "<group>"; };
 		B63015892C0660C80095A695 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B630158B2C06643E0095A695 /* RollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingView.swift; sourceTree = "<group>"; };
-		B630158D2C06669C0095A695 /* ChooseGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGoal.swift; sourceTree = "<group>"; };
-		B630158F2C0669540095A695 /* ChooseTrainingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTrainingPlan.swift; sourceTree = "<group>"; };
 		B63015912C066BBE0095A695 /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
 		B63015932C066DD80095A695 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
 		B63015952C06773B0095A695 /* TrainingPlanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPlanItem.swift; sourceTree = "<group>"; };
@@ -70,6 +69,11 @@
 		B63015AD2C077DBB0095A695 /* PermissionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDetails.swift; sourceTree = "<group>"; };
 		B63015AF2C0799C10095A695 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		B63015B42C0A5C4E0095A695 /* TrainingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPlan.swift; sourceTree = "<group>"; };
+		B63015B62C0A71A60095A695 /* WeeklyRuns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyRuns.swift; sourceTree = "<group>"; };
+		B6762E3E2C0B7E01004DE857 /* GoalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPicker.swift; sourceTree = "<group>"; };
+		B6762E402C0B8144004DE857 /* PlanPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPicker.swift; sourceTree = "<group>"; };
+		B6762E422C0B9D62004DE857 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B6762E442C0BBA85004DE857 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,7 @@
 			children = (
 				B63015832C0638470095A695 /* RunView */,
 				B630156E2BFE597F0095A695 /* Shelves */,
-				B630156A2BFE418D0095A695 /* HomeView.swift */,
+				B6762E422C0B9D62004DE857 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,8 +183,8 @@
 				B630158B2C06643E0095A695 /* RollingView.swift */,
 				B63015AD2C077DBB0095A695 /* PermissionDetails.swift */,
 				B63015AA2C0779B50095A695 /* HealthPermission.swift */,
-				B630158D2C06669C0095A695 /* ChooseGoal.swift */,
-				B630158F2C0669540095A695 /* ChooseTrainingPlan.swift */,
+				B6762E3E2C0B7E01004DE857 /* GoalPicker.swift */,
+				B6762E402C0B8144004DE857 /* PlanPicker.swift */,
 				B63015952C06773B0095A695 /* TrainingPlanItem.swift */,
 				B63015912C066BBE0095A695 /* GetStarted.swift */,
 			);
@@ -191,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				B63015872C0638890095A695 /* DetailRunView.swift */,
+				B6762E442C0BBA85004DE857 /* TrackView.swift */,
 			);
 			path = RunView;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				B63015B42C0A5C4E0095A695 /* TrainingPlan.swift */,
+				B63015B62C0A71A60095A695 /* WeeklyRuns.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -304,8 +310,8 @@
 			files = (
 				B63015802C0635FC0095A695 /* CuratedRun.swift in Sources */,
 				B63015A12C0745DB0095A695 /* URLSession+Async.swift in Sources */,
-				B630156B2BFE418D0095A695 /* HomeView.swift in Sources */,
 				B63015AB2C0779B50095A695 /* HealthPermission.swift in Sources */,
+				B6762E412C0B8144004DE857 /* PlanPicker.swift in Sources */,
 				B630158A2C0660C80095A695 /* WelcomeView.swift in Sources */,
 				B630157E2C06283B0095A695 /* RunView.swift in Sources */,
 				B63015942C066DD80095A695 /* HomeHeader.swift in Sources */,
@@ -315,16 +321,18 @@
 				B630158C2C06643E0095A695 /* RollingView.swift in Sources */,
 				B630159B2C0745700095A695 /* GraphQLResult.swift in Sources */,
 				B63015962C06773B0095A695 /* TrainingPlanItem.swift in Sources */,
-				B63015902C0669540095A695 /* ChooseTrainingPlan.swift in Sources */,
 				B63015AE2C077DBB0095A695 /* PermissionDetails.swift in Sources */,
 				B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */,
+				B6762E432C0B9D62004DE857 /* HomeView.swift in Sources */,
 				B63015B52C0A5C4E0095A695 /* TrainingPlan.swift in Sources */,
 				B63015A62C0774370095A695 /* StepCountViewModel.swift in Sources */,
 				B63015922C066BBE0095A695 /* GetStarted.swift in Sources */,
 				B630159D2C0745940095A695 /* GraphQLAPI.swift in Sources */,
+				B63015B72C0A71A60095A695 /* WeeklyRuns.swift in Sources */,
 				B63015882C0638890095A695 /* DetailRunView.swift in Sources */,
+				B6762E452C0BBA85004DE857 /* TrackView.swift in Sources */,
+				B6762E3F2C0B7E01004DE857 /* GoalPicker.swift in Sources */,
 				B630159F2C0745C00095A695 /* APIService.swift in Sources */,
-				B630158E2C06669C0095A695 /* ChooseGoal.swift in Sources */,
 				B63015982C07428E0095A695 /* DataResponse.swift in Sources */,
 				B63015A32C07460D0095A695 /* GraphQLOperation.swift in Sources */,
 			);

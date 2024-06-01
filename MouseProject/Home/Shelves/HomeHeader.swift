@@ -10,16 +10,15 @@ import AVFoundation
 import AVKit
 
 struct HomeHeader: View {
-    let trainingPlan: String
-    let weekNumber: Int
-    let previewURL: String
-    let headerImageURL: String
+    let weekTitle: String
+    let weeklyHeaderImageUrl: String
+    let weeklyPreviewUrl: String
     
     @State private var isPreviewing = false
     
     var body: some View {
         ZStack {
-            AsyncImage(url: URL(string: headerImageURL)) { phase in
+            AsyncImage(url: URL(string: weeklyHeaderImageUrl)) { phase in
                 switch phase {
                 case .empty:
                     ProgressView()
@@ -27,7 +26,8 @@ struct HomeHeader: View {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        //.frame(height: 400)
+                        .overlay(Color.black.opacity(0.2))
+                        
                 case .failure:
                     Rectangle()
                         .background(.blue)
@@ -37,17 +37,15 @@ struct HomeHeader: View {
                 }
             }
             .frame(height: 450)
-           // .ignoresSafeArea(edges: .top)
             
             
             
             VStack {
                 Spacer()
                 
-                Text(trainingPlan)
+                Text(weekTitle)
                     .font(.title)
                 
-                Text("Week \(weekNumber)")
                 
                 Button(action: {
                     isPreviewing.toggle()
@@ -60,14 +58,15 @@ struct HomeHeader: View {
                 }
                 .padding()
                 .sheet(isPresented: $isPreviewing) {
-                    if let url = URL(string: previewURL) {
+                    if let url = URL(string: weeklyPreviewUrl) {
                         VideoPlayer(player: AVPlayer(url: url))
                     }
                 }
             }
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 #Preview {
-    HomeHeader(trainingPlan: "Testing", weekNumber: 1, previewURL: "https://www.apple.com/105/media/uk/apple-fitness-plus/2023/366c638f-0f8f-46d7-993c-03b74a09e296/anim/overview-hero/large_2x.mov", headerImageURL: "https://www.apple.com/v/apple-fitness-plus/y/images/overview/trainers/hero/trainers_hero__w5qafq0jxrmq_large_2x.jpg")
+   HomeHeader(weekTitle: "Testing", weeklyHeaderImageUrl: "https://www.apple.com/v/apple-fitness-plus/z/images/overview/trainers/hero/trainers_hero__w5qafq0jxrmq_large_2x.jpg", weeklyPreviewUrl: "https://youtu.be/Q04S_NkRHGw")
 }

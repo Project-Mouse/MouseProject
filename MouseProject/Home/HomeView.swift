@@ -2,148 +2,100 @@
 //  HomeView.swift
 //  MouseProject
 //
-//  Created by Imran razak on 22/05/2024.
+//  Created by Imran razak on 01/06/2024.
 //
 
 import SwiftUI
-import SwiftData
 
 struct HomeView: View {
-    @State private var selectedWeek = 1
-    let weeks = ["Week 1", "Week 2", "Week 3"] // Add more weeks as needed
+    @State private var plans: [Plans] = []
     let apiService: APIService = APIService()
-    
-    @State private var goals: [Goals] = []
-    
-    @Query var trainingPlan: [TrainingPlan]
-    var ChosenPlan: TrainingPlan? { trainingPlan.first}
+    let currentWeekNumber: Int = 1
+    let planIdentifier: Int = 1
+    @State private var selectedWeek: Int = 1 // Selected week, default to 1
     
     var body: some View {
-        NavigationStack{
-            ScrollView{
-                
-                //DEBUG ONLY for Trianing Plans
-                /*
-                Text("Training Plans: \(trainingPlan)") // Print trainingPlans
-                Text("Chosen Plan: \(String(describing: ChosenPlan))")
-                 
-                 */
-                
-                if let goal = goals.first(where: { $0.title == "TestGoal" }), // Manually input the training plan name
-                             let plan = goal.plans.first(where: { $0.weeklyPreview.contains(where: { $0.weekNo == selectedWeek }) }),
-                             let preview = plan.weeklyPreview.first(where: { $0.weekNo == selectedWeek }) {
-                              HomeHeader(trainingPlan: "PlanName", // Manually input the training plan name
-                                         weekNumber: selectedWeek,
-                                         previewURL: preview.previewUrl,
-                                         headerImageURL: plan.headerImage)
-                          } else {
-                              Text("No data available for the selected week")
-                          }
-                
-                /*
-                if let chosenPlan = ChosenPlan {
-                    Text("Chosen Plan: \(chosenPlan)") // Print the chosen plan
-                    if let goal = goals.first(where: { $0.title == chosenPlan.planName }) {
-                        if let plan = goal.plans.first {
-                            let previewIndex = selectedWeek - 1
-                            if previewIndex < plan.weeklyPreview.count {
-                                let preview = plan.weeklyPreview[previewIndex]
-                                HomeHeader(trainingPlan: chosenPlan.planName,
-                                           weekNumber: selectedWeek,
-                                           previewURL: preview.previewUrl,
-                                           headerImageURL: plan.headerImage)
-                            } else {
-                                Text("Preview index out of range")
-                            }
-                        } else {
-                            Text("No plans found for the goal")
-                        }
-                    } else {
-                        Text("No goal found for the chosen plan")
+        NavigationStack {
+            List {
+                // Display HomeHeader
+                ForEach(plans.filter { $0.planIdentifier == planIdentifier }) { plan in
+                    if let currentWeekPlan = plan.weeklyPlans.first(where: { $0.weekNumber == currentWeekNumber }) {
+                        HomeHeader(weekTitle: currentWeekPlan.weekTitle,
+                                   weeklyHeaderImageUrl: currentWeekPlan.weeklyHeaderImage,
+                                   weeklyPreviewUrl: currentWeekPlan.weekPreviewUrl)
                     }
-                } else {
-                    Text("No plan selected")
                 }
-                */
                 
-                
-                
-                HStack{
-                    Picker(selection: $selectedWeek, label: Text("Week")) {
-                        ForEach(0..<weeks.count, id: \.self) { index in
-                            Text(weeks[index]).tag(index)
+                Menu {
+                    ForEach(1..<numberOfWeeks() + 1, id: \.self) { week in
+                        Button(action: {
+                            selectedWeek = week
+                        }) {
+                            Text("Week \(week)")
+                                .padding()
+                                .foregroundColor(.primary)
                         }
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(12)
                     }
-                    .pickerStyle(MenuPickerStyle())
+                } label: {
+                    HStack{
+                        Text("Week \(selectedWeek)")
+                        Image(systemName: "chevron.down")
+                    }
                     .padding()
-                    
-                    Spacer()
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(12)
                 }
+                .menuStyle(ButtonMenuStyle())
                 
                 
+                // Display RunViews for the selected week
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 5) {
-                        RunView(imageName: "run1", title: "Feel Good Run", duration: "10 mins")
-                        RunView(imageName: "run2", title: "Feel Good Run", duration: "20 mins")
-                        RunView(imageName: "run3", title: "Feel Good Run", duration: "15 mins")
-                    }
-                }
-                .padding([.leading, .top])
-                
-                VStack(alignment: .leading) {
-                    Text("Curated Runs")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .padding([.leading, .top])
-                    
-                    Text("Handpicked to help you achieve your goal.")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                        .padding([.leading, .bottom])
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 16) {
-                            ForEach(0..<3) { _ in
-                                CuratedRun()
+                    LazyHStack {
+                        ForEach(selectedWeekRuns(), id: \.id) { run in
+                            NavigationLink(destination: DetailRunView(run: run)) {
+                                RunView(runThumbnail: run.runThumbnail,
+                                        runTitle: run.runTitle,
+                                        runDuration: "\(run.runDuration) mins")
                             }
                         }
-                        
                     }
-                    .padding(.leading)
                 }
-                
+
             }
+            .listStyle(PlainListStyle())
+            .edgesIgnoringSafeArea(.top)
+            .navigationTitle("Weekly Plans")
+            .preferredColorScheme(.dark)
             .onAppear {
                 Task {
-                    do {
-                        self.goals = try await self.apiService.listGoals()
-                        print("Goals:", self.goals) // Debug print
-                    } catch {
-                        // Handle error
-                        print("Error: \(error)")
-                    }
+                    self.plans = try await self.apiService.listPlans()
                 }
             }
-            
-            .edgesIgnoringSafeArea(.top)
-            .navigationTitle("Training")
-            .preferredColorScheme(.dark)
-            .scrollIndicators(.hidden)
             .toolbar {
-                ToolbarItem{
-                    Circle()
-                        .frame(height: 35)
-                }
+                
+                //Profile Placeholder
+                Circle()
+                    .frame(height: 35)
             }
-            
         }
     }
     
-    //Update Runs based on Week Selected
+    // Function to filter runs for the selected week
+    func selectedWeekRuns() -> [Run] {
+        return plans.flatMap { $0.weeklyPlans }
+            .filter { $0.weekNumber == selectedWeek }
+            .flatMap { $0.weekRuns }
+    }
     
-    //Check and update Header View based on Week
+    // Function to get the maximum week number from plans
+    func numberOfWeeks() -> Int {
+        return plans.flatMap { $0.weeklyPlans }.map { $0.weekNumber }.max() ?? 1
+    }
     
 }
+
 #Preview {
     HomeView()
 }
