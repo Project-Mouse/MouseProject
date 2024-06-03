@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60C59D42C0DFE2E008B98D4 /* DeepBlueGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59D32C0DFE2E008B98D4 /* DeepBlueGradient.swift */; };
+		B60C59D62C0E00C9008B98D4 /* Playbacktest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59D52C0E00C9008B98D4 /* Playbacktest.swift */; };
+		B60C59DA2C0E15F4008B98D4 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59D92C0E15F4008B98D4 /* ActivityView.swift */; };
+		B60C59DC2C0E1638008B98D4 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59DB2C0E1638008B98D4 /* PlayerView.swift */; };
 		B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015462BFBBEED0095A695 /* MouseProjectApp.swift */; };
 		B630154B2BFBBEEF0095A695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154A2BFBBEEF0095A695 /* Assets.xcassets */; };
 		B630154E2BFBBEEF0095A695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154D2BFBBEEF0095A695 /* Preview Assets.xcassets */; };
@@ -38,9 +42,15 @@
 		B6762E412C0B8144004DE857 /* PlanPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E402C0B8144004DE857 /* PlanPicker.swift */; };
 		B6762E432C0B9D62004DE857 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E422C0B9D62004DE857 /* HomeView.swift */; };
 		B6762E452C0BBA85004DE857 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E442C0BBA85004DE857 /* TrackView.swift */; };
+		B6762E4A2C0D0081004DE857 /* PlayerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E492C0D0081004DE857 /* PlayerSheet.swift */; };
+		B6762E4C2C0D031F004DE857 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E4B2C0D031F004DE857 /* MusicManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60C59D32C0DFE2E008B98D4 /* DeepBlueGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBlueGradient.swift; sourceTree = "<group>"; };
+		B60C59D52C0E00C9008B98D4 /* Playbacktest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playbacktest.swift; sourceTree = "<group>"; };
+		B60C59D92C0E15F4008B98D4 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		B60C59DB2C0E1638008B98D4 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		B63015432BFBBEED0095A695 /* MouseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63015462BFBBEED0095A695 /* MouseProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseProjectApp.swift; sourceTree = "<group>"; };
 		B630154A2BFBBEEF0095A695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +84,8 @@
 		B6762E402C0B8144004DE857 /* PlanPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPicker.swift; sourceTree = "<group>"; };
 		B6762E422C0B9D62004DE857 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B6762E442C0BBA85004DE857 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		B6762E492C0D0081004DE857 /* PlayerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSheet.swift; sourceTree = "<group>"; };
+		B6762E4B2C0D031F004DE857 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,7 @@
 				B630157C2BFE7C0A0095A695 /* Setup */,
 				B630155E2BFBCCE60095A695 /* Utilities */,
 				B63015692BFE41760095A695 /* Home */,
+				B6762E462C0CFF79004DE857 /* Activity */,
 				B630154A2BFBBEEF0095A695 /* Assets.xcassets */,
 				B630154C2BFBBEEF0095A695 /* Preview Content */,
 			);
@@ -231,6 +244,35 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		B6762E462C0CFF79004DE857 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				B6762E482C0CFFEA004DE857 /* ViewModel */,
+				B6762E472C0CFFE1004DE857 /* Views */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		B6762E472C0CFFE1004DE857 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6762E492C0D0081004DE857 /* PlayerSheet.swift */,
+				B60C59D32C0DFE2E008B98D4 /* DeepBlueGradient.swift */,
+				B60C59D52C0E00C9008B98D4 /* Playbacktest.swift */,
+				B60C59D92C0E15F4008B98D4 /* ActivityView.swift */,
+				B60C59DB2C0E1638008B98D4 /* PlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6762E482C0CFFEA004DE857 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B6762E4B2C0D031F004DE857 /* MusicManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -311,9 +353,12 @@
 				B63015802C0635FC0095A695 /* CuratedRun.swift in Sources */,
 				B63015A12C0745DB0095A695 /* URLSession+Async.swift in Sources */,
 				B63015AB2C0779B50095A695 /* HealthPermission.swift in Sources */,
+				B60C59DC2C0E1638008B98D4 /* PlayerView.swift in Sources */,
 				B6762E412C0B8144004DE857 /* PlanPicker.swift in Sources */,
+				B6762E4C2C0D031F004DE857 /* MusicManager.swift in Sources */,
 				B630158A2C0660C80095A695 /* WelcomeView.swift in Sources */,
 				B630157E2C06283B0095A695 /* RunView.swift in Sources */,
+				B60C59D42C0DFE2E008B98D4 /* DeepBlueGradient.swift in Sources */,
 				B63015942C066DD80095A695 /* HomeHeader.swift in Sources */,
 				B63015B02C0799C10095A695 /* LocationViewModel.swift in Sources */,
 				B63015682BFBCEDB0095A695 /* AuthManager.swift in Sources */,
@@ -323,9 +368,11 @@
 				B63015962C06773B0095A695 /* TrainingPlanItem.swift in Sources */,
 				B63015AE2C077DBB0095A695 /* PermissionDetails.swift in Sources */,
 				B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */,
+				B60C59D62C0E00C9008B98D4 /* Playbacktest.swift in Sources */,
 				B6762E432C0B9D62004DE857 /* HomeView.swift in Sources */,
 				B63015B52C0A5C4E0095A695 /* TrainingPlan.swift in Sources */,
 				B63015A62C0774370095A695 /* StepCountViewModel.swift in Sources */,
+				B60C59DA2C0E15F4008B98D4 /* ActivityView.swift in Sources */,
 				B63015922C066BBE0095A695 /* GetStarted.swift in Sources */,
 				B630159D2C0745940095A695 /* GraphQLAPI.swift in Sources */,
 				B63015B72C0A71A60095A695 /* WeeklyRuns.swift in Sources */,
@@ -334,6 +381,7 @@
 				B6762E3F2C0B7E01004DE857 /* GoalPicker.swift in Sources */,
 				B630159F2C0745C00095A695 /* APIService.swift in Sources */,
 				B63015982C07428E0095A695 /* DataResponse.swift in Sources */,
+				B6762E4A2C0D0081004DE857 /* PlayerSheet.swift in Sources */,
 				B63015A32C07460D0095A695 /* GraphQLOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -450,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -473,6 +521,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MouseProject/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "We need to access Music for music during runs.";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to read your steps count for your Feel Good Points";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location whilst you are running to trace and display weather.";
@@ -482,12 +531,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ImranRazak.MouseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ImranRazak.MouseProjectiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -512,6 +562,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MouseProject/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "We need to access Music for music during runs.";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to read your steps count for your Feel Good Points";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location whilst you are running to trace and display weather.";
@@ -521,12 +572,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ImranRazak.MouseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ImranRazak.MouseProjectiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

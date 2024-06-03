@@ -24,7 +24,7 @@ struct MouseProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            GoalPicker()
+            PlayerSheet()
               .modelContainer(for: TrainingPlan.self)
               .preferredColorScheme(.dark)
         }
