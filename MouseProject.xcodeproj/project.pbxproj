@@ -11,6 +11,17 @@
 		B60C59D62C0E00C9008B98D4 /* Playbacktest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59D52C0E00C9008B98D4 /* Playbacktest.swift */; };
 		B60C59DA2C0E15F4008B98D4 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59D92C0E15F4008B98D4 /* ActivityView.swift */; };
 		B60C59DC2C0E1638008B98D4 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59DB2C0E1638008B98D4 /* PlayerView.swift */; };
+		B60C59DE2C0E777F008B98D4 /* MusicPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59DD2C0E777F008B98D4 /* MusicPermission.swift */; };
+		B60C59E02C0E7DE4008B98D4 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59DF2C0E7DE4008B98D4 /* StatsView.swift */; };
+		B60C59E82C0E84B5008B98D4 /* WatchMouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59E72C0E84B5008B98D4 /* WatchMouseApp.swift */; };
+		B60C59EA2C0E84B5008B98D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59E92C0E84B5008B98D4 /* ContentView.swift */; };
+		B60C59EC2C0E84B7008B98D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C59EB2C0E84B7008B98D4 /* Assets.xcassets */; };
+		B60C59EF2C0E84B7008B98D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C59EE2C0E84B7008B98D4 /* Preview Assets.xcassets */; };
+		B60C59F22C0E84B7008B98D4 /* WatchMouse Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B60C59E52C0E84B5008B98D4 /* WatchMouse Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B60C59FC2C0E8A96008B98D4 /* StepCountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A52C0774370095A695 /* StepCountViewModel.swift */; };
+		B60C59FD2C0E8A9D008B98D4 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AF2C0799C10095A695 /* LocationViewModel.swift */; };
+		B60C5A002C0E8DC8008B98D4 /* WatchWorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59FF2C0E8DC8008B98D4 /* WatchWorkoutSession.swift */; };
+		B60C5A022C0E8DEA008B98D4 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A012C0E8DEA008B98D4 /* TabViews.swift */; };
 		B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015462BFBBEED0095A695 /* MouseProjectApp.swift */; };
 		B630154B2BFBBEEF0095A695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154A2BFBBEEF0095A695 /* Assets.xcassets */; };
 		B630154E2BFBBEEF0095A695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154D2BFBBEEF0095A695 /* Preview Assets.xcassets */; };
@@ -42,15 +53,48 @@
 		B6762E412C0B8144004DE857 /* PlanPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E402C0B8144004DE857 /* PlanPicker.swift */; };
 		B6762E432C0B9D62004DE857 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E422C0B9D62004DE857 /* HomeView.swift */; };
 		B6762E452C0BBA85004DE857 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E442C0BBA85004DE857 /* TrackView.swift */; };
-		B6762E4A2C0D0081004DE857 /* PlayerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E492C0D0081004DE857 /* PlayerSheet.swift */; };
 		B6762E4C2C0D031F004DE857 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6762E4B2C0D031F004DE857 /* MusicManager.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B60C59F02C0E84B7008B98D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B630153B2BFBBEED0095A695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60C59E42C0E84B5008B98D4;
+			remoteInfo = "WatchMouse Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B60C59F62C0E84B7008B98D4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B60C59F22C0E84B7008B98D4 /* WatchMouse Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B60C59D32C0DFE2E008B98D4 /* DeepBlueGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepBlueGradient.swift; sourceTree = "<group>"; };
 		B60C59D52C0E00C9008B98D4 /* Playbacktest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playbacktest.swift; sourceTree = "<group>"; };
 		B60C59D92C0E15F4008B98D4 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		B60C59DB2C0E1638008B98D4 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		B60C59DD2C0E777F008B98D4 /* MusicPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPermission.swift; sourceTree = "<group>"; };
+		B60C59DF2C0E7DE4008B98D4 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		B60C59E52C0E84B5008B98D4 /* WatchMouse Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchMouse Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60C59E72C0E84B5008B98D4 /* WatchMouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMouseApp.swift; sourceTree = "<group>"; };
+		B60C59E92C0E84B5008B98D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B60C59EB2C0E84B7008B98D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B60C59EE2C0E84B7008B98D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B60C59FE2C0E8B0C008B98D4 /* WatchMouse Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchMouse Watch App.entitlements"; sourceTree = "<group>"; };
+		B60C59FF2C0E8DC8008B98D4 /* WatchWorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWorkoutSession.swift; sourceTree = "<group>"; };
+		B60C5A012C0E8DEA008B98D4 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		B63015432BFBBEED0095A695 /* MouseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63015462BFBBEED0095A695 /* MouseProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseProjectApp.swift; sourceTree = "<group>"; };
 		B630154A2BFBBEEF0095A695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,11 +128,17 @@
 		B6762E402C0B8144004DE857 /* PlanPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPicker.swift; sourceTree = "<group>"; };
 		B6762E422C0B9D62004DE857 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B6762E442C0BBA85004DE857 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
-		B6762E492C0D0081004DE857 /* PlayerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSheet.swift; sourceTree = "<group>"; };
 		B6762E4B2C0D031F004DE857 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B60C59E22C0E84B5008B98D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B63015402BFBBEED0095A695 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,11 +150,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60C59E62C0E84B5008B98D4 /* WatchMouse Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				B60C59FE2C0E8B0C008B98D4 /* WatchMouse Watch App.entitlements */,
+				B60C59E72C0E84B5008B98D4 /* WatchMouseApp.swift */,
+				B60C59E92C0E84B5008B98D4 /* ContentView.swift */,
+				B60C59FF2C0E8DC8008B98D4 /* WatchWorkoutSession.swift */,
+				B60C5A012C0E8DEA008B98D4 /* TabViews.swift */,
+				B60C59EB2C0E84B7008B98D4 /* Assets.xcassets */,
+				B60C59ED2C0E84B7008B98D4 /* Preview Content */,
+			);
+			path = "WatchMouse Watch App";
+			sourceTree = "<group>";
+		};
+		B60C59ED2C0E84B7008B98D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B60C59EE2C0E84B7008B98D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		B630153A2BFBBEED0095A695 = {
 			isa = PBXGroup;
 			children = (
 				B63015642BFBCDF50095A695 /* GoogleService-Info.plist */,
 				B63015452BFBBEED0095A695 /* MouseProject */,
+				B60C59E62C0E84B5008B98D4 /* WatchMouse Watch App */,
 				B63015442BFBBEED0095A695 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				B63015432BFBBEED0095A695 /* MouseProject.app */,
+				B60C59E52C0E84B5008B98D4 /* WatchMouse Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +270,7 @@
 				B630158B2C06643E0095A695 /* RollingView.swift */,
 				B63015AD2C077DBB0095A695 /* PermissionDetails.swift */,
 				B63015AA2C0779B50095A695 /* HealthPermission.swift */,
+				B60C59DD2C0E777F008B98D4 /* MusicPermission.swift */,
 				B6762E3E2C0B7E01004DE857 /* GoalPicker.swift */,
 				B6762E402C0B8144004DE857 /* PlanPicker.swift */,
 				B63015952C06773B0095A695 /* TrainingPlanItem.swift */,
@@ -256,9 +331,9 @@
 		B6762E472C0CFFE1004DE857 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B6762E492C0D0081004DE857 /* PlayerSheet.swift */,
 				B60C59D32C0DFE2E008B98D4 /* DeepBlueGradient.swift */,
 				B60C59D52C0E00C9008B98D4 /* Playbacktest.swift */,
+				B60C59DF2C0E7DE4008B98D4 /* StatsView.swift */,
 				B60C59D92C0E15F4008B98D4 /* ActivityView.swift */,
 				B60C59DB2C0E1638008B98D4 /* PlayerView.swift */,
 			);
@@ -276,6 +351,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B60C59E42C0E84B5008B98D4 /* WatchMouse Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60C59F32C0E84B7008B98D4 /* Build configuration list for PBXNativeTarget "WatchMouse Watch App" */;
+			buildPhases = (
+				B60C59E12C0E84B5008B98D4 /* Sources */,
+				B60C59E22C0E84B5008B98D4 /* Frameworks */,
+				B60C59E32C0E84B5008B98D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchMouse Watch App";
+			productName = "WatchMouse Watch App";
+			productReference = B60C59E52C0E84B5008B98D4 /* WatchMouse Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B63015422BFBBEED0095A695 /* MouseProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B63015512BFBBEEF0095A695 /* Build configuration list for PBXNativeTarget "MouseProject" */;
@@ -283,10 +375,12 @@
 				B630153F2BFBBEED0095A695 /* Sources */,
 				B63015402BFBBEED0095A695 /* Frameworks */,
 				B63015412BFBBEED0095A695 /* Resources */,
+				B60C59F62C0E84B7008B98D4 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B60C59F12C0E84B7008B98D4 /* PBXTargetDependency */,
 			);
 			name = MouseProject;
 			packageProductDependencies = (
@@ -306,6 +400,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					B60C59E42C0E84B5008B98D4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					B63015422BFBBEED0095A695 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -328,11 +425,21 @@
 			projectRoot = "";
 			targets = (
 				B63015422BFBBEED0095A695 /* MouseProject */,
+				B60C59E42C0E84B5008B98D4 /* WatchMouse Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B60C59E32C0E84B5008B98D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60C59EF2C0E84B7008B98D4 /* Preview Assets.xcassets in Resources */,
+				B60C59EC2C0E84B7008B98D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B63015412BFBBEED0095A695 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +453,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B60C59E12C0E84B5008B98D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60C59EA2C0E84B5008B98D4 /* ContentView.swift in Sources */,
+				B60C59FC2C0E8A96008B98D4 /* StepCountViewModel.swift in Sources */,
+				B60C5A022C0E8DEA008B98D4 /* TabViews.swift in Sources */,
+				B60C59E82C0E84B5008B98D4 /* WatchMouseApp.swift in Sources */,
+				B60C5A002C0E8DC8008B98D4 /* WatchWorkoutSession.swift in Sources */,
+				B60C59FD2C0E8A9D008B98D4 /* LocationViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B630153F2BFBBEED0095A695 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +482,7 @@
 				B63015942C066DD80095A695 /* HomeHeader.swift in Sources */,
 				B63015B02C0799C10095A695 /* LocationViewModel.swift in Sources */,
 				B63015682BFBCEDB0095A695 /* AuthManager.swift in Sources */,
+				B60C59E02C0E7DE4008B98D4 /* StatsView.swift in Sources */,
 				B63015602BFBCCF40095A695 /* LoginView.swift in Sources */,
 				B630158C2C06643E0095A695 /* RollingView.swift in Sources */,
 				B630159B2C0745700095A695 /* GraphQLResult.swift in Sources */,
@@ -380,15 +501,85 @@
 				B6762E452C0BBA85004DE857 /* TrackView.swift in Sources */,
 				B6762E3F2C0B7E01004DE857 /* GoalPicker.swift in Sources */,
 				B630159F2C0745C00095A695 /* APIService.swift in Sources */,
+				B60C59DE2C0E777F008B98D4 /* MusicPermission.swift in Sources */,
 				B63015982C07428E0095A695 /* DataResponse.swift in Sources */,
-				B6762E4A2C0D0081004DE857 /* PlayerSheet.swift in Sources */,
 				B63015A32C07460D0095A695 /* GraphQLOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B60C59F12C0E84B7008B98D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60C59E42C0E84B5008B98D4 /* WatchMouse Watch App */;
+			targetProxy = B60C59F02C0E84B7008B98D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B60C59F42C0E84B7008B98D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchMouse Watch App/WatchMouse Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchMouse Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M8VYRKA2RH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchMouse;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ImranRazak.MouseProjectiOS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ImranRazak.MouseProjectiOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		B60C59F52C0E84B7008B98D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchMouse Watch App/WatchMouse Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchMouse Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M8VYRKA2RH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchMouse;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ImranRazak.MouseProjectiOS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ImranRazak.MouseProjectiOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
 		B630154F2BFBBEEF0095A695 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -511,6 +702,7 @@
 		B63015522BFBBEEF0095A695 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MouseProject/MouseProject.entitlements;
@@ -552,6 +744,7 @@
 		B63015532BFBBEEF0095A695 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MouseProject/MouseProject.entitlements;
@@ -593,6 +786,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B60C59F32C0E84B7008B98D4 /* Build configuration list for PBXNativeTarget "WatchMouse Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60C59F42C0E84B7008B98D4 /* Debug */,
+				B60C59F52C0E84B7008B98D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B630153E2BFBBEED0095A695 /* Build configuration list for PBXProject "MouseProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

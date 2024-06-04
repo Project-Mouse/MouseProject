@@ -15,7 +15,6 @@ struct PermissionDetails: View {
     var body: some View {
         NavigationStack{
             Form{
-                
                 VStack(alignment: .leading){
                     Image(systemName: "heart.text.square.fill")
                         .font(.system(size: 35))
@@ -48,7 +47,7 @@ struct PermissionDetails: View {
                     Text("Apple Music")
                         .font(.headline)
                     
-                    Text("We require permisison to use your Apple Music Service so we can play music we're chosen for the run. If you don't use Apple Music, You can still listen to music from outside the app too.")
+                    Text("We require permisison to use your Apple Music Service so we can play music we've chosen for the run. If you don't use Apple Music, You can still listen to music from outside the app too.")
                         .padding(.bottom)
                 }
                 

@@ -16,10 +16,12 @@ class MusicKitManager: ObservableObject {
     /// `true` when the album detail view sets a playback queue on the player.
     @Published private var isPlaybackQueueSet = false
 
+
     /// `true` when the player is playing.
     var isPlaying: Bool {
         return (playerState.playbackStatus == .playing)
     }
+
 
     /// The Apple Music subscription of the current user.
     @Published private var musicSubscription: MusicSubscription?

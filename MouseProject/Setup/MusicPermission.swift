@@ -1,37 +1,41 @@
 //
-//  PermissionsView.swift
+//  MusicPermission.swift
 //  MouseProject
 //
-//  Created by Imran razak on 29/05/2024.
+//  Created by Imran razak on 03/06/2024.
 //
 
 import SwiftUI
+import HealthKit
+import WatchConnectivity
 
-struct HealthPermissionView: View {
-    @StateObject private var healthKitManager = StepCountViewModel()
+struct MusicPermission: View {
+    @StateObject var musicKitManager = MusicKitManager()
+    @ObservedObject var workoutViewModel: StepCountViewModel
+
     @State private var showNextView: Bool = false
-    
     var body: some View {
         ZStack{
             DeepBlueGradient()
             
             VStack(alignment: .leading) {
-                Image(systemName: "heart.text.square.fill")
+                Image(systemName: "airpodspro")
                     .font(.system(size: 35))
                     .foregroundColor(.red)
                     .padding([.top, .bottom], 10)
-                Text("Health App")
+                Text("Music")
                     .font(.title)
                     .bold()
                     .foregroundColor(.white)
                 
-                Text("We will only read your step count from the Health App to give you Feel Good Points for your everday movement ")
+                Text("We need permission to use your Apple Music to share some great music with you we've chosen for each run.")
                     .foregroundColor(.white)
                     .padding(.bottom)
                 
                 Spacer()
                 
                 Button{
+                    workoutViewModel.startWorkoutSession()
                     showNextView.toggle()
                 } label: {
                     Text("Next")
@@ -43,14 +47,18 @@ struct HealthPermissionView: View {
                 }
                 
             }
+            .onAppear{
+                musicKitManager.requestAuthorization()
+            }
             .padding()
             .fullScreenCover(isPresented: $showNextView) {
-                MusicPermission(workoutViewModel: StepCountViewModel())
+               // GoalPicker()
+                ActivityView()
             }
         }
     }
 }
 
 #Preview {
-    HealthPermissionView()
+    MusicPermission(workoutViewModel: StepCountViewModel())
 }

@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import MusicKit
 
 struct ActivityView: View {
+    @StateObject var musicKitManager = MusicKitManager()
+    let trackID = "1560735424"
+    
     var body: some View {
         ZStack{
             DeepBlueGradient()
@@ -34,6 +38,7 @@ struct ActivityView: View {
                     .cornerRadius(12.0)
                 }
                 .padding()
+               
                 
                 
                 //Coaching
@@ -50,12 +55,15 @@ struct ActivityView: View {
                     }
                     Spacer()
                 }
-                .padding()
+                .padding([.leading, .trailing], 30)
                 //Performance Bar
                 
                 
                 //Stats
                 
+                
+                
+                Spacer()
                 
                 //Workout Controls
                 HStack{
@@ -67,8 +75,11 @@ struct ActivityView: View {
                     }
                 }
                 
+                Spacer()
                 
                 //PlayerView
+                PlayerView()
+                    .padding(.bottom)
                 
             }
         }
