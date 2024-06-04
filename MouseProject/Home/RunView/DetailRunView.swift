@@ -5,12 +5,17 @@
 //  Created by Imran razak on 28/05/2024.
 //
 
+import os
 import SwiftUI
+import HealthKitUI
+import HealthKit
 
 struct DetailRunView: View {
     let run: Run
     
+    @EnvironmentObject var workoutManager: WorkoutManager
     @State private var isPreviewing = false
+    @State private var isShowingActivityView = false
     
     var body: some View {
         NavigationStack{
@@ -80,6 +85,8 @@ struct DetailRunView: View {
                 }
                 
                 Button{
+                    isShowingActivityView = true
+                    startCyclingOnWatch()
                     
                 } label: {
                     Text("Let's Go!")
@@ -101,7 +108,20 @@ struct DetailRunView: View {
             .listStyle(PlainListStyle())
             .edgesIgnoringSafeArea(.top)
             .preferredColorScheme(.dark)
+            .fullScreenCover(isPresented: $isShowingActivityView){
+                ActivityView()
+            }
     
+        }
+    }
+    
+    private func startCyclingOnWatch() {
+        Task {
+            do {
+                try await workoutManager.startWatchWorkout(workoutType: .cycling)
+            } catch {
+                Logger.shared.log("Failed to start cycling on the paired watch.")
+            }
         }
     }
 }

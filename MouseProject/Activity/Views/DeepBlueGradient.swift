@@ -10,7 +10,7 @@ import SwiftUI
 struct DeepBlueGradient: View {
     var body: some View {
         LinearGradient(
-                 gradient: Gradient(colors: [Color("DeepBlue"), .black]),
+                 gradient: Gradient(colors: [Color("DeepBlue"), Color("Deep Blue DARK")]),
                  startPoint: .top,
                  endPoint: .bottom
              )

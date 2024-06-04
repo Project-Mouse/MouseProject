@@ -5,11 +5,15 @@
 //  Created by Imran razak on 29/05/2024.
 //
 
+import os
 import SwiftUI
+import HealthKitUI
+import HealthKit
 
 struct HealthPermissionView: View {
-    @StateObject private var healthKitManager = StepCountViewModel()
+    @EnvironmentObject var workoutManager: WorkoutManager
     @State private var showNextView: Bool = false
+    @State private var triggerAuthorization = false
     
     var body: some View {
         ZStack{
@@ -43,9 +47,23 @@ struct HealthPermissionView: View {
                 }
                 
             }
+            .onAppear{
+                triggerAuthorization.toggle()
+            }
+            .healthDataAccessRequest(store: workoutManager.healthStore,
+                                     shareTypes: workoutManager.typesToShare,
+                                     readTypes: workoutManager.typesToRead,
+                                     trigger: triggerAuthorization, completion: { result in
+                 switch result {
+                 case .success(let success):
+                     print("\(success) for authorization")
+                 case .failure(let error):
+                     print("\(error) for authorization")
+                 }
+             })
             .padding()
             .fullScreenCover(isPresented: $showNextView) {
-                MusicPermission(workoutViewModel: StepCountViewModel())
+                MusicPermission()
             }
         }
     }

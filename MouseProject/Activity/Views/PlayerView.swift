@@ -72,8 +72,6 @@ struct PlayerView: View {
                 }
             } else {
                 VStack {
-                    Text("Requesting authorization...")
-                        .foregroundColor(.white)
                     Button("Retry Authorization") {
                         musicKitManager.requestAuthorization()
                     }

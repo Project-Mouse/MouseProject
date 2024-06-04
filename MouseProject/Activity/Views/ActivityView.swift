@@ -7,12 +7,21 @@
 
 import SwiftUI
 import MusicKit
+import os
+import HealthKit
 
 struct ActivityView: View {
     @StateObject var musicKitManager = MusicKitManager()
+    @EnvironmentObject var workoutManager: WorkoutManager
+    
     let trackID = "1560735424"
     
+    @State private var isShowingWeapped: Bool = false
+    
     var body: some View {
+        let fromDate = workoutManager.session?.startDate ?? Date()
+        let schedule = MetricsTimelineSchedule(from: fromDate, isPaused: workoutManager.sessionState == .paused)
+        
         ZStack{
             DeepBlueGradient()
             
@@ -22,11 +31,11 @@ struct ActivityView: View {
                     Spacer()
                     
                     Button{
-                        //Dismiss View
-                        
                         //End Workout
-                        
+                        workoutManager.session?.stopActivity(with: .now )
                         //Show Wrapped
+                        isShowingWeapped.toggle()
+                        
                     }label: {
                         Text("End")
                             .foregroundColor(.white)
@@ -38,44 +47,59 @@ struct ActivityView: View {
                     .cornerRadius(12.0)
                 }
                 .padding()
-               
+                
                 
                 
                 //Coaching
                 HStack{
                     VStack(alignment: .leading){
-                        Text("TopText")
-                            .foregroundColor(.white)
-                            .font(.caption2)
+                        Text("Coaching")
+                            .foregroundColor(.cyan)
+                            .font(.headline)
                         
-                        Text("Hello")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
+                        Text("""
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+""")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
                     }
                     Spacer()
                 }
                 .padding([.leading, .trailing], 30)
+                
+                
                 //Performance Bar
                 
                 
+                
                 //Stats
-                
-                
+                StatsView()
                 
                 Spacer()
                 
                 //Workout Controls
-                HStack{
-                    VStack{
-                        Image(systemName: "pause.fill")
-                            .foregroundColor(.gray)
-                            .font(.system(size: 70))
-                           
+                HStack {
+                    VStack {
+                        Button {
+                            if let session = workoutManager.session {
+                                workoutManager.sessionState == .running ? session.pause() : session.resume()
+                            }
+                        } label: {
+                            let systemImage = workoutManager.sessionState == .running ? "pause.fill" : "play.fill"
+                            Image(systemName: systemImage)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(.gray)
+                        }
+                        .disabled(!workoutManager.sessionState.isActive)
                     }
                 }
                 
                 Spacer()
+                
                 
                 //PlayerView
                 PlayerView()
@@ -83,9 +107,13 @@ struct ActivityView: View {
                 
             }
         }
+        .fullScreenCover(isPresented: $isShowingWeapped){
+            WrappedView()
+        }
     }
 }
 
 #Preview {
     ActivityView()
+        .environmentObject(WorkoutManager())
 }

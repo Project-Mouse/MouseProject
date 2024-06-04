@@ -13,15 +13,31 @@
 		B60C59DC2C0E1638008B98D4 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59DB2C0E1638008B98D4 /* PlayerView.swift */; };
 		B60C59DE2C0E777F008B98D4 /* MusicPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59DD2C0E777F008B98D4 /* MusicPermission.swift */; };
 		B60C59E02C0E7DE4008B98D4 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59DF2C0E7DE4008B98D4 /* StatsView.swift */; };
-		B60C59E82C0E84B5008B98D4 /* WatchMouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59E72C0E84B5008B98D4 /* WatchMouseApp.swift */; };
-		B60C59EA2C0E84B5008B98D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59E92C0E84B5008B98D4 /* ContentView.swift */; };
-		B60C59EC2C0E84B7008B98D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C59EB2C0E84B7008B98D4 /* Assets.xcassets */; };
-		B60C59EF2C0E84B7008B98D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C59EE2C0E84B7008B98D4 /* Preview Assets.xcassets */; };
-		B60C59F22C0E84B7008B98D4 /* WatchMouse Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B60C59E52C0E84B5008B98D4 /* WatchMouse Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B60C59FC2C0E8A96008B98D4 /* StepCountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A52C0774370095A695 /* StepCountViewModel.swift */; };
-		B60C59FD2C0E8A9D008B98D4 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AF2C0799C10095A695 /* LocationViewModel.swift */; };
-		B60C5A002C0E8DC8008B98D4 /* WatchWorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C59FF2C0E8DC8008B98D4 /* WatchWorkoutSession.swift */; };
-		B60C5A022C0E8DEA008B98D4 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A012C0E8DEA008B98D4 /* TabViews.swift */; };
+		B60C5A052C0F32AA008B98D4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A042C0F32AA008B98D4 /* Logger.swift */; };
+		B60C5A072C0F32F9008B98D4 /* HKWorkout+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A062C0F32F9008B98D4 /* HKWorkout+Statistics.swift */; };
+		B60C5A0B2C0F3444008B98D4 /* WorkoutManager+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A0A2C0F3444008B98D4 /* WorkoutManager+iOS.swift */; };
+		B60C5A132C0F34DA008B98D4 /* MouseProjectWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A122C0F34DA008B98D4 /* MouseProjectWatchApp.swift */; };
+		B60C5A152C0F34DA008B98D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A142C0F34DA008B98D4 /* ContentView.swift */; };
+		B60C5A172C0F34DB008B98D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C5A162C0F34DB008B98D4 /* Assets.xcassets */; };
+		B60C5A1A2C0F34DB008B98D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C5A192C0F34DB008B98D4 /* Preview Assets.xcassets */; };
+		B60C5A1D2C0F34DB008B98D4 /* MouseProjectWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B60C5A102C0F34DA008B98D4 /* MouseProjectWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B60C5A232C0F35BB008B98D4 /* WorkoutManager+watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A082C0F3405008B98D4 /* WorkoutManager+watchOS.swift */; };
+		B60C5A252C0F3635008B98D4 /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A242C0F3635008B98D4 /* MetricsTimelineSchedule.swift */; };
+		B60C5A272C0F580F008B98D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A262C0F580F008B98D4 /* AppDelegate.swift */; };
+		B60C5A282C0F582C008B98D4 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A52C0774370095A695 /* WorkoutManager.swift */; };
+		B60C5A2A2C0F585C008B98D4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A042C0F32AA008B98D4 /* Logger.swift */; };
+		B60C5A2C2C0F5893008B98D4 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A2B2C0F5893008B98D4 /* PagingView.swift */; };
+		B60C5A2E2C0F58A9008B98D4 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A2D2C0F58A9008B98D4 /* ControlsView.swift */; };
+		B60C5A302C0F58E0008B98D4 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A2F2C0F58E0008B98D4 /* ButtonLabel.swift */; };
+		B60C5A312C0F58ED008B98D4 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A2F2C0F58E0008B98D4 /* ButtonLabel.swift */; };
+		B60C5A332C0F590A008B98D4 /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A322C0F590A008B98D4 /* MetricsView.swift */; };
+		B60C5A352C0F5938008B98D4 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A342C0F5938008B98D4 /* SummaryView.swift */; };
+		B60C5A372C0F5970008B98D4 /* ElapsedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A362C0F5970008B98D4 /* ElapsedTime.swift */; };
+		B60C5A382C0F5996008B98D4 /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A242C0F3635008B98D4 /* MetricsTimelineSchedule.swift */; };
+		B60C5A392C0F59B3008B98D4 /* HKWorkout+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A062C0F32F9008B98D4 /* HKWorkout+Statistics.swift */; };
+		B60C5A3A2C0F5CC0008B98D4 /* ElapsedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A362C0F5970008B98D4 /* ElapsedTime.swift */; };
+		B60C5A3C2C0F66ED008B98D4 /* Performance Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3B2C0F66ED008B98D4 /* Performance Bar.swift */; };
+		B60C5A3E2C0F6F23008B98D4 /* WrappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3D2C0F6F23008B98D4 /* WrappedView.swift */; };
 		B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015462BFBBEED0095A695 /* MouseProjectApp.swift */; };
 		B630154B2BFBBEEF0095A695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154A2BFBBEEF0095A695 /* Assets.xcassets */; };
 		B630154E2BFBBEEF0095A695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154D2BFBBEEF0095A695 /* Preview Assets.xcassets */; };
@@ -43,7 +59,7 @@
 		B630159F2C0745C00095A695 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630159E2C0745C00095A695 /* APIService.swift */; };
 		B63015A12C0745DB0095A695 /* URLSession+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A02C0745DB0095A695 /* URLSession+Async.swift */; };
 		B63015A32C07460D0095A695 /* GraphQLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A22C07460D0095A695 /* GraphQLOperation.swift */; };
-		B63015A62C0774370095A695 /* StepCountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A52C0774370095A695 /* StepCountViewModel.swift */; };
+		B63015A62C0774370095A695 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015A52C0774370095A695 /* WorkoutManager.swift */; };
 		B63015AB2C0779B50095A695 /* HealthPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AA2C0779B50095A695 /* HealthPermission.swift */; };
 		B63015AE2C077DBB0095A695 /* PermissionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AD2C077DBB0095A695 /* PermissionDetails.swift */; };
 		B63015B02C0799C10095A695 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015AF2C0799C10095A695 /* LocationViewModel.swift */; };
@@ -57,12 +73,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B60C59F02C0E84B7008B98D4 /* PBXContainerItemProxy */ = {
+		B60C5A1B2C0F34DB008B98D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B630153B2BFBBEED0095A695 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B60C59E42C0E84B5008B98D4;
-			remoteInfo = "WatchMouse Watch App";
+			remoteGlobalIDString = B60C5A0F2C0F34DA008B98D4;
+			remoteInfo = "MouseProjectWatch Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,7 +89,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				B60C59F22C0E84B7008B98D4 /* WatchMouse Watch App.app in Embed Watch Content */,
+				B60C5A1D2C0F34DB008B98D4 /* MouseProjectWatch Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,14 +103,27 @@
 		B60C59DB2C0E1638008B98D4 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		B60C59DD2C0E777F008B98D4 /* MusicPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPermission.swift; sourceTree = "<group>"; };
 		B60C59DF2C0E7DE4008B98D4 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
-		B60C59E52C0E84B5008B98D4 /* WatchMouse Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchMouse Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B60C59E72C0E84B5008B98D4 /* WatchMouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMouseApp.swift; sourceTree = "<group>"; };
-		B60C59E92C0E84B5008B98D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B60C59EB2C0E84B7008B98D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B60C59EE2C0E84B7008B98D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B60C59FE2C0E8B0C008B98D4 /* WatchMouse Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchMouse Watch App.entitlements"; sourceTree = "<group>"; };
-		B60C59FF2C0E8DC8008B98D4 /* WatchWorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWorkoutSession.swift; sourceTree = "<group>"; };
-		B60C5A012C0E8DEA008B98D4 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
+		B60C5A042C0F32AA008B98D4 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B60C5A062C0F32F9008B98D4 /* HKWorkout+Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKWorkout+Statistics.swift"; sourceTree = "<group>"; };
+		B60C5A082C0F3405008B98D4 /* WorkoutManager+watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutManager+watchOS.swift"; sourceTree = "<group>"; };
+		B60C5A0A2C0F3444008B98D4 /* WorkoutManager+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutManager+iOS.swift"; sourceTree = "<group>"; };
+		B60C5A102C0F34DA008B98D4 /* MouseProjectWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MouseProjectWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60C5A122C0F34DA008B98D4 /* MouseProjectWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseProjectWatchApp.swift; sourceTree = "<group>"; };
+		B60C5A142C0F34DA008B98D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B60C5A162C0F34DB008B98D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B60C5A192C0F34DB008B98D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B60C5A212C0F351D008B98D4 /* MouseProjectWatch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MouseProjectWatch Watch App.entitlements"; sourceTree = "<group>"; };
+		B60C5A222C0F3528008B98D4 /* MouseProjectWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MouseProjectWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B60C5A242C0F3635008B98D4 /* MetricsTimelineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsTimelineSchedule.swift; sourceTree = "<group>"; };
+		B60C5A262C0F580F008B98D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B60C5A2B2C0F5893008B98D4 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		B60C5A2D2C0F58A9008B98D4 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		B60C5A2F2C0F58E0008B98D4 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		B60C5A322C0F590A008B98D4 /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		B60C5A342C0F5938008B98D4 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		B60C5A362C0F5970008B98D4 /* ElapsedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTime.swift; sourceTree = "<group>"; };
+		B60C5A3B2C0F66ED008B98D4 /* Performance Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Performance Bar.swift"; sourceTree = "<group>"; };
+		B60C5A3D2C0F6F23008B98D4 /* WrappedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedView.swift; sourceTree = "<group>"; };
 		B63015432BFBBEED0095A695 /* MouseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63015462BFBBEED0095A695 /* MouseProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseProjectApp.swift; sourceTree = "<group>"; };
 		B630154A2BFBBEEF0095A695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,7 +145,7 @@
 		B630159E2C0745C00095A695 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		B63015A02C0745DB0095A695 /* URLSession+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Async.swift"; sourceTree = "<group>"; };
 		B63015A22C07460D0095A695 /* GraphQLOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLOperation.swift; sourceTree = "<group>"; };
-		B63015A52C0774370095A695 /* StepCountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountViewModel.swift; sourceTree = "<group>"; };
+		B63015A52C0774370095A695 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		B63015A92C0778D00095A695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B63015AA2C0779B50095A695 /* HealthPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPermission.swift; sourceTree = "<group>"; };
 		B63015AC2C077C280095A695 /* MouseProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MouseProject.entitlements; sourceTree = "<group>"; };
@@ -132,7 +161,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B60C59E22C0E84B5008B98D4 /* Frameworks */ = {
+		B60C5A0D2C0F34DA008B98D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -150,24 +179,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B60C59E62C0E84B5008B98D4 /* WatchMouse Watch App */ = {
+		B60C5A032C0F329F008B98D4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				B60C59FE2C0E8B0C008B98D4 /* WatchMouse Watch App.entitlements */,
-				B60C59E72C0E84B5008B98D4 /* WatchMouseApp.swift */,
-				B60C59E92C0E84B5008B98D4 /* ContentView.swift */,
-				B60C59FF2C0E8DC8008B98D4 /* WatchWorkoutSession.swift */,
-				B60C5A012C0E8DEA008B98D4 /* TabViews.swift */,
-				B60C59EB2C0E84B7008B98D4 /* Assets.xcassets */,
-				B60C59ED2C0E84B7008B98D4 /* Preview Content */,
+				B60C5A042C0F32AA008B98D4 /* Logger.swift */,
+				B60C5A062C0F32F9008B98D4 /* HKWorkout+Statistics.swift */,
+				B63015A52C0774370095A695 /* WorkoutManager.swift */,
+				B60C5A082C0F3405008B98D4 /* WorkoutManager+watchOS.swift */,
+				B60C5A0A2C0F3444008B98D4 /* WorkoutManager+iOS.swift */,
+				B60C5A242C0F3635008B98D4 /* MetricsTimelineSchedule.swift */,
+				B60C5A2F2C0F58E0008B98D4 /* ButtonLabel.swift */,
+				B60C5A362C0F5970008B98D4 /* ElapsedTime.swift */,
 			);
-			path = "WatchMouse Watch App";
+			path = Shared;
 			sourceTree = "<group>";
 		};
-		B60C59ED2C0E84B7008B98D4 /* Preview Content */ = {
+		B60C5A112C0F34DA008B98D4 /* MouseProjectWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				B60C59EE2C0E84B7008B98D4 /* Preview Assets.xcassets */,
+				B60C5A222C0F3528008B98D4 /* MouseProjectWatch-Watch-App-Info.plist */,
+				B60C5A212C0F351D008B98D4 /* MouseProjectWatch Watch App.entitlements */,
+				B60C5A122C0F34DA008B98D4 /* MouseProjectWatchApp.swift */,
+				B60C5A142C0F34DA008B98D4 /* ContentView.swift */,
+				B60C5A262C0F580F008B98D4 /* AppDelegate.swift */,
+				B60C5A2B2C0F5893008B98D4 /* PagingView.swift */,
+				B60C5A2D2C0F58A9008B98D4 /* ControlsView.swift */,
+				B60C5A322C0F590A008B98D4 /* MetricsView.swift */,
+				B60C5A342C0F5938008B98D4 /* SummaryView.swift */,
+				B60C5A162C0F34DB008B98D4 /* Assets.xcassets */,
+				B60C5A182C0F34DB008B98D4 /* Preview Content */,
+			);
+			path = "MouseProjectWatch Watch App";
+			sourceTree = "<group>";
+		};
+		B60C5A182C0F34DB008B98D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B60C5A192C0F34DB008B98D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -176,8 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				B63015642BFBCDF50095A695 /* GoogleService-Info.plist */,
+				B60C5A032C0F329F008B98D4 /* Shared */,
 				B63015452BFBBEED0095A695 /* MouseProject */,
-				B60C59E62C0E84B5008B98D4 /* WatchMouse Watch App */,
+				B60C5A112C0F34DA008B98D4 /* MouseProjectWatch Watch App */,
 				B63015442BFBBEED0095A695 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -186,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				B63015432BFBBEED0095A695 /* MouseProject.app */,
-				B60C59E52C0E84B5008B98D4 /* WatchMouse Watch App.app */,
+				B60C5A102C0F34DA008B98D4 /* MouseProjectWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,7 +353,6 @@
 		B63015A42C0773DA0095A695 /* Permissions */ = {
 			isa = PBXGroup;
 			children = (
-				B63015A52C0774370095A695 /* StepCountViewModel.swift */,
 				B63015AF2C0799C10095A695 /* LocationViewModel.swift */,
 			);
 			path = Permissions;
@@ -335,7 +383,9 @@
 				B60C59D52C0E00C9008B98D4 /* Playbacktest.swift */,
 				B60C59DF2C0E7DE4008B98D4 /* StatsView.swift */,
 				B60C59D92C0E15F4008B98D4 /* ActivityView.swift */,
+				B60C5A3B2C0F66ED008B98D4 /* Performance Bar.swift */,
 				B60C59DB2C0E1638008B98D4 /* PlayerView.swift */,
+				B60C5A3D2C0F6F23008B98D4 /* WrappedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,21 +401,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B60C59E42C0E84B5008B98D4 /* WatchMouse Watch App */ = {
+		B60C5A0F2C0F34DA008B98D4 /* MouseProjectWatch Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B60C59F32C0E84B7008B98D4 /* Build configuration list for PBXNativeTarget "WatchMouse Watch App" */;
+			buildConfigurationList = B60C5A1E2C0F34DB008B98D4 /* Build configuration list for PBXNativeTarget "MouseProjectWatch Watch App" */;
 			buildPhases = (
-				B60C59E12C0E84B5008B98D4 /* Sources */,
-				B60C59E22C0E84B5008B98D4 /* Frameworks */,
-				B60C59E32C0E84B5008B98D4 /* Resources */,
+				B60C5A0C2C0F34DA008B98D4 /* Sources */,
+				B60C5A0D2C0F34DA008B98D4 /* Frameworks */,
+				B60C5A0E2C0F34DA008B98D4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "WatchMouse Watch App";
-			productName = "WatchMouse Watch App";
-			productReference = B60C59E52C0E84B5008B98D4 /* WatchMouse Watch App.app */;
+			name = "MouseProjectWatch Watch App";
+			productName = "MouseProjectWatch Watch App";
+			productReference = B60C5A102C0F34DA008B98D4 /* MouseProjectWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B63015422BFBBEED0095A695 /* MouseProject */ = {
@@ -380,7 +430,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B60C59F12C0E84B7008B98D4 /* PBXTargetDependency */,
+				B60C5A1C2C0F34DB008B98D4 /* PBXTargetDependency */,
 			);
 			name = MouseProject;
 			packageProductDependencies = (
@@ -400,7 +450,7 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					B60C59E42C0E84B5008B98D4 = {
+					B60C5A0F2C0F34DA008B98D4 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 					B63015422BFBBEED0095A695 = {
@@ -425,18 +475,18 @@
 			projectRoot = "";
 			targets = (
 				B63015422BFBBEED0095A695 /* MouseProject */,
-				B60C59E42C0E84B5008B98D4 /* WatchMouse Watch App */,
+				B60C5A0F2C0F34DA008B98D4 /* MouseProjectWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B60C59E32C0E84B5008B98D4 /* Resources */ = {
+		B60C5A0E2C0F34DA008B98D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60C59EF2C0E84B7008B98D4 /* Preview Assets.xcassets in Resources */,
-				B60C59EC2C0E84B7008B98D4 /* Assets.xcassets in Resources */,
+				B60C5A1A2C0F34DB008B98D4 /* Preview Assets.xcassets in Resources */,
+				B60C5A172C0F34DB008B98D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,16 +503,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B60C59E12C0E84B5008B98D4 /* Sources */ = {
+		B60C5A0C2C0F34DA008B98D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60C59EA2C0E84B5008B98D4 /* ContentView.swift in Sources */,
-				B60C59FC2C0E8A96008B98D4 /* StepCountViewModel.swift in Sources */,
-				B60C5A022C0E8DEA008B98D4 /* TabViews.swift in Sources */,
-				B60C59E82C0E84B5008B98D4 /* WatchMouseApp.swift in Sources */,
-				B60C5A002C0E8DC8008B98D4 /* WatchWorkoutSession.swift in Sources */,
-				B60C59FD2C0E8A9D008B98D4 /* LocationViewModel.swift in Sources */,
+				B60C5A302C0F58E0008B98D4 /* ButtonLabel.swift in Sources */,
+				B60C5A272C0F580F008B98D4 /* AppDelegate.swift in Sources */,
+				B60C5A2A2C0F585C008B98D4 /* Logger.swift in Sources */,
+				B60C5A232C0F35BB008B98D4 /* WorkoutManager+watchOS.swift in Sources */,
+				B60C5A2C2C0F5893008B98D4 /* PagingView.swift in Sources */,
+				B60C5A2E2C0F58A9008B98D4 /* ControlsView.swift in Sources */,
+				B60C5A332C0F590A008B98D4 /* MetricsView.swift in Sources */,
+				B60C5A282C0F582C008B98D4 /* WorkoutManager.swift in Sources */,
+				B60C5A152C0F34DA008B98D4 /* ContentView.swift in Sources */,
+				B60C5A392C0F59B3008B98D4 /* HKWorkout+Statistics.swift in Sources */,
+				B60C5A382C0F5996008B98D4 /* MetricsTimelineSchedule.swift in Sources */,
+				B60C5A372C0F5970008B98D4 /* ElapsedTime.swift in Sources */,
+				B60C5A132C0F34DA008B98D4 /* MouseProjectWatchApp.swift in Sources */,
+				B60C5A352C0F5938008B98D4 /* SummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,13 +529,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63015802C0635FC0095A695 /* CuratedRun.swift in Sources */,
+				B60C5A3C2C0F66ED008B98D4 /* Performance Bar.swift in Sources */,
 				B63015A12C0745DB0095A695 /* URLSession+Async.swift in Sources */,
 				B63015AB2C0779B50095A695 /* HealthPermission.swift in Sources */,
 				B60C59DC2C0E1638008B98D4 /* PlayerView.swift in Sources */,
 				B6762E412C0B8144004DE857 /* PlanPicker.swift in Sources */,
+				B60C5A0B2C0F3444008B98D4 /* WorkoutManager+iOS.swift in Sources */,
 				B6762E4C2C0D031F004DE857 /* MusicManager.swift in Sources */,
 				B630158A2C0660C80095A695 /* WelcomeView.swift in Sources */,
 				B630157E2C06283B0095A695 /* RunView.swift in Sources */,
+				B60C5A3A2C0F5CC0008B98D4 /* ElapsedTime.swift in Sources */,
 				B60C59D42C0DFE2E008B98D4 /* DeepBlueGradient.swift in Sources */,
 				B63015942C066DD80095A695 /* HomeHeader.swift in Sources */,
 				B63015B02C0799C10095A695 /* LocationViewModel.swift in Sources */,
@@ -487,22 +548,27 @@
 				B630158C2C06643E0095A695 /* RollingView.swift in Sources */,
 				B630159B2C0745700095A695 /* GraphQLResult.swift in Sources */,
 				B63015962C06773B0095A695 /* TrainingPlanItem.swift in Sources */,
+				B60C5A072C0F32F9008B98D4 /* HKWorkout+Statistics.swift in Sources */,
 				B63015AE2C077DBB0095A695 /* PermissionDetails.swift in Sources */,
 				B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */,
 				B60C59D62C0E00C9008B98D4 /* Playbacktest.swift in Sources */,
 				B6762E432C0B9D62004DE857 /* HomeView.swift in Sources */,
 				B63015B52C0A5C4E0095A695 /* TrainingPlan.swift in Sources */,
-				B63015A62C0774370095A695 /* StepCountViewModel.swift in Sources */,
+				B63015A62C0774370095A695 /* WorkoutManager.swift in Sources */,
 				B60C59DA2C0E15F4008B98D4 /* ActivityView.swift in Sources */,
 				B63015922C066BBE0095A695 /* GetStarted.swift in Sources */,
+				B60C5A312C0F58ED008B98D4 /* ButtonLabel.swift in Sources */,
+				B60C5A052C0F32AA008B98D4 /* Logger.swift in Sources */,
 				B630159D2C0745940095A695 /* GraphQLAPI.swift in Sources */,
 				B63015B72C0A71A60095A695 /* WeeklyRuns.swift in Sources */,
 				B63015882C0638890095A695 /* DetailRunView.swift in Sources */,
+				B60C5A252C0F3635008B98D4 /* MetricsTimelineSchedule.swift in Sources */,
 				B6762E452C0BBA85004DE857 /* TrackView.swift in Sources */,
 				B6762E3F2C0B7E01004DE857 /* GoalPicker.swift in Sources */,
 				B630159F2C0745C00095A695 /* APIService.swift in Sources */,
 				B60C59DE2C0E777F008B98D4 /* MusicPermission.swift in Sources */,
 				B63015982C07428E0095A695 /* DataResponse.swift in Sources */,
+				B60C5A3E2C0F6F23008B98D4 /* WrappedView.swift in Sources */,
 				B63015A32C07460D0095A695 /* GraphQLOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,27 +576,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B60C59F12C0E84B7008B98D4 /* PBXTargetDependency */ = {
+		B60C5A1C2C0F34DB008B98D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B60C59E42C0E84B5008B98D4 /* WatchMouse Watch App */;
-			targetProxy = B60C59F02C0E84B7008B98D4 /* PBXContainerItemProxy */;
+			target = B60C5A0F2C0F34DA008B98D4 /* MouseProjectWatch Watch App */;
+			targetProxy = B60C5A1B2C0F34DB008B98D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B60C59F42C0E84B7008B98D4 /* Debug */ = {
+		B60C5A1F2C0F34DB008B98D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "WatchMouse Watch App/WatchMouse Watch App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "MouseProjectWatch Watch App/MouseProjectWatch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchMouse Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MouseProjectWatch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = M8VYRKA2RH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchMouse;
+				INFOPLIST_FILE = "MouseProjectWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MouseProjectWatch;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need permission to share your workout data to the Fitness App.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts Tracked by the Watch will be updated to HealthApp";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ImranRazak.MouseProjectiOS;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -549,19 +618,22 @@
 			};
 			name = Debug;
 		};
-		B60C59F52C0E84B7008B98D4 /* Release */ = {
+		B60C5A202C0F34DB008B98D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "WatchMouse Watch App/WatchMouse Watch App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "MouseProjectWatch Watch App/MouseProjectWatch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchMouse Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MouseProjectWatch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = M8VYRKA2RH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchMouse;
+				INFOPLIST_FILE = "MouseProjectWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MouseProjectWatch;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need permission to share your workout data to the Fitness App.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts Tracked by the Watch will be updated to HealthApp";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ImranRazak.MouseProjectiOS;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -715,6 +787,7 @@
 				INFOPLIST_FILE = MouseProject/Info.plist;
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "We need to access Music for music during runs.";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to read your steps count for your Feel Good Points";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to update the health app";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location whilst you are running to trace and display weather.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
@@ -757,6 +830,7 @@
 				INFOPLIST_FILE = MouseProject/Info.plist;
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "We need to access Music for music during runs.";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to read your steps count for your Feel Good Points";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to update the health app";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location whilst you are running to trace and display weather.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location whilst you are running to trace and display weather.";
@@ -786,11 +860,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B60C59F32C0E84B7008B98D4 /* Build configuration list for PBXNativeTarget "WatchMouse Watch App" */ = {
+		B60C5A1E2C0F34DB008B98D4 /* Build configuration list for PBXNativeTarget "MouseProjectWatch Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B60C59F42C0E84B7008B98D4 /* Debug */,
-				B60C59F52C0E84B7008B98D4 /* Release */,
+				B60C5A1F2C0F34DB008B98D4 /* Debug */,
+				B60C5A202C0F34DB008B98D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -5,13 +5,15 @@
 //  Created by Imran razak on 03/06/2024.
 //
 
+import os
 import SwiftUI
+import HealthKitUI
 import HealthKit
-import WatchConnectivity
 
 struct MusicPermission: View {
     @StateObject var musicKitManager = MusicKitManager()
-    @ObservedObject var workoutViewModel: StepCountViewModel
+    @EnvironmentObject var workoutManager: WorkoutManager
+    @State private var didStartWorkout = false
 
     @State private var showNextView: Bool = false
     var body: some View {
@@ -35,7 +37,12 @@ struct MusicPermission: View {
                 Spacer()
                 
                 Button{
-                    workoutViewModel.startWorkoutSession()
+                  //  workoutViewModel.startWorkoutSession()
+                    if !workoutManager.sessionState.isActive {
+                        startCyclingOnWatch()
+                    }
+                    didStartWorkout = true
+                    
                     showNextView.toggle()
                 } label: {
                     Text("Next")
@@ -56,9 +63,19 @@ struct MusicPermission: View {
                 ActivityView()
             }
         }
+        
+    }
+    private func startCyclingOnWatch() {
+        Task {
+            do {
+                try await workoutManager.startWatchWorkout(workoutType: .cycling)
+            } catch {
+                Logger.shared.log("Failed to start cycling on the paired watch.")
+            }
+        }
     }
 }
 
 #Preview {
-    MusicPermission(workoutViewModel: StepCountViewModel())
+    MusicPermission()
 }

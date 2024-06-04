@@ -4,53 +4,54 @@
 //
 //  Created by Imran razak on 03/06/2024.
 //
+/*
+ Abstract:
+ A SwiftUI view that controls the mirroring workout session and presents the metrics.
+ */
 
+import os
 import SwiftUI
 import HealthKit
 
 struct StatsView: View {
-    @ObservedObject var workoutViewModel = StepCountViewModel()
+    @EnvironmentObject var workoutManager: WorkoutManager
     
     var body: some View {
+        let fromDate = workoutManager.session?.startDate ?? Date()
+        let schedule = MetricsTimelineSchedule(from: fromDate, isPaused: workoutManager.sessionState == .paused)
+        
         HStack {
             VStack(alignment: .center) {
-                Text("❤️ \n\(workoutViewModel.heartRateSamples.last?.quantity.doubleValue(for: HKUnit.count().unitDivided(by: .minute())) ?? 0, specifier: "%.0f") bpm")
+                Text("❤️")
+                    .font(.system(size: 30))
+                Text("\(workoutManager.heartRate, specifier: "%.0f")")
+                    .bold()
+                    .foregroundColor(.red)
                     .multilineTextAlignment(.center)
             }
             .padding()
             
             VStack(alignment: .center) {
-                Text("⏱️ \n\(formattedTimeFromSeconds(workoutViewModel.duration))")
-                    .multilineTextAlignment(.center)
+                ElapsedTimeView(elapsedTime: workoutManager.elapsedTimeInterval, showSubseconds: true)
+                    .foregroundColor(.yellow)
             }
             .padding()
             
             VStack {
-                Text("🏃 \n\(String(format: "%.2f", workoutViewModel.distance / 1609.34)) miles")
+                Text("🏃")
+                    .font(.system(size: 30))
+                Text("\(String(format: "%.2f", workoutManager.distance / 1609.34)) mi")
+                    .bold()
                     .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
             }
             .padding()
         }
-        .onAppear {
-            workoutViewModel.startWorkoutSession()
-            workoutViewModel.updateHandler = {
-                // Update UI when workout data changes
-            }
-        }
-        .onDisappear {
-            workoutViewModel.endWorkoutSession()
-        }
-    }
-    
-    // Function to format time from seconds
-    private func formattedTimeFromSeconds(_ seconds: TimeInterval) -> String {
-        let formatter = DateComponentsFormatter()
-        formatter.unitsStyle = .abbreviated
-        formatter.allowedUnits = [.hour, .minute, .second]
-        return formatter.string(from: seconds) ?? ""
+        .font(.system(size: 23))
     }
 }
 
 #Preview {
     StatsView()
+        .environmentObject(WorkoutManager())
 }
