@@ -41,12 +41,13 @@ class WorkoutManager: NSObject, ObservableObject {
     /**
      HealthKit data types to share and read.
      */
-    let typesToShare: Set = [HKQuantityType.workoutType()]
+    let typesToShare: Set = [HKQuantityType.workoutType(),
+                             HKQuantityType(.dietaryWater)]
     let typesToRead: Set = [
         HKQuantityType(.heartRate),
         HKQuantityType(.activeEnergyBurned),
         HKQuantityType(.distanceWalkingRunning),
-        HKQuantityType(.restingHeartRate),
+        HKQuantityType(.cyclingSpeed),
         HKQuantityType(.cyclingPower),
         HKQuantityType(.cyclingCadence),
         HKQuantityType(.distanceCycling),
@@ -259,4 +260,3 @@ extension HKWorkoutSessionState {
         self != .notStarted && self != .ended
     }
 }
-

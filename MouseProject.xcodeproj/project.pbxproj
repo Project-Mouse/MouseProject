@@ -38,6 +38,9 @@
 		B60C5A3A2C0F5CC0008B98D4 /* ElapsedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A362C0F5970008B98D4 /* ElapsedTime.swift */; };
 		B60C5A3C2C0F66ED008B98D4 /* Performance Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3B2C0F66ED008B98D4 /* Performance Bar.swift */; };
 		B60C5A3E2C0F6F23008B98D4 /* WrappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3D2C0F6F23008B98D4 /* WrappedView.swift */; };
+		B60C5A402C0F8559008B98D4 /* StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3F2C0F8559008B98D4 /* StoreKit.swift */; };
+		B60C5A432C0F8C29008B98D4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60C5A422C0F8C29008B98D4 /* StoreKit.framework */; };
+		B60C5A472C0F914F008B98D4 /* PassIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A462C0F914F008B98D4 /* PassIdentifiers.swift */; };
 		B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63015462BFBBEED0095A695 /* MouseProjectApp.swift */; };
 		B630154B2BFBBEEF0095A695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154A2BFBBEEF0095A695 /* Assets.xcassets */; };
 		B630154E2BFBBEEF0095A695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630154D2BFBBEEF0095A695 /* Preview Assets.xcassets */; };
@@ -124,6 +127,10 @@
 		B60C5A362C0F5970008B98D4 /* ElapsedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTime.swift; sourceTree = "<group>"; };
 		B60C5A3B2C0F66ED008B98D4 /* Performance Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Performance Bar.swift"; sourceTree = "<group>"; };
 		B60C5A3D2C0F6F23008B98D4 /* WrappedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedView.swift; sourceTree = "<group>"; };
+		B60C5A3F2C0F8559008B98D4 /* StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKit.swift; sourceTree = "<group>"; };
+		B60C5A422C0F8C29008B98D4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B60C5A442C0F8C94008B98D4 /* SKConfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = SKConfig.storekit; sourceTree = "<group>"; };
+		B60C5A462C0F914F008B98D4 /* PassIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassIdentifiers.swift; sourceTree = "<group>"; };
 		B63015432BFBBEED0095A695 /* MouseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63015462BFBBEED0095A695 /* MouseProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseProjectApp.swift; sourceTree = "<group>"; };
 		B630154A2BFBBEEF0095A695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63015632BFBCDC20095A695 /* FirebaseAuth in Frameworks */,
+				B60C5A432C0F8C29008B98D4 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,14 +228,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B60C5A412C0F8C29008B98D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B60C5A422C0F8C29008B98D4 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B60C5A452C0F9139008B98D4 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				B60C5A462C0F914F008B98D4 /* PassIdentifiers.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		B630153A2BFBBEED0095A695 = {
 			isa = PBXGroup;
 			children = (
+				B60C5A442C0F8C94008B98D4 /* SKConfig.storekit */,
 				B63015642BFBCDF50095A695 /* GoogleService-Info.plist */,
 				B60C5A032C0F329F008B98D4 /* Shared */,
 				B63015452BFBBEED0095A695 /* MouseProject */,
 				B60C5A112C0F34DA008B98D4 /* MouseProjectWatch Watch App */,
 				B63015442BFBBEED0095A695 /* Products */,
+				B60C5A412C0F8C29008B98D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -314,8 +340,10 @@
 		B630157C2BFE7C0A0095A695 /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				B60C5A452C0F9139008B98D4 /* Store */,
 				B63015A42C0773DA0095A695 /* Permissions */,
 				B63015892C0660C80095A695 /* WelcomeView.swift */,
+				B60C5A3F2C0F8559008B98D4 /* StoreKit.swift */,
 				B630158B2C06643E0095A695 /* RollingView.swift */,
 				B63015AD2C077DBB0095A695 /* PermissionDetails.swift */,
 				B63015AA2C0779B50095A695 /* HealthPermission.swift */,
@@ -553,6 +581,7 @@
 				B63015472BFBBEED0095A695 /* MouseProjectApp.swift in Sources */,
 				B60C59D62C0E00C9008B98D4 /* Playbacktest.swift in Sources */,
 				B6762E432C0B9D62004DE857 /* HomeView.swift in Sources */,
+				B60C5A472C0F914F008B98D4 /* PassIdentifiers.swift in Sources */,
 				B63015B52C0A5C4E0095A695 /* TrainingPlan.swift in Sources */,
 				B63015A62C0774370095A695 /* WorkoutManager.swift in Sources */,
 				B60C59DA2C0E15F4008B98D4 /* ActivityView.swift in Sources */,
@@ -564,6 +593,7 @@
 				B63015882C0638890095A695 /* DetailRunView.swift in Sources */,
 				B60C5A252C0F3635008B98D4 /* MetricsTimelineSchedule.swift in Sources */,
 				B6762E452C0BBA85004DE857 /* TrackView.swift in Sources */,
+				B60C5A402C0F8559008B98D4 /* StoreKit.swift in Sources */,
 				B6762E3F2C0B7E01004DE857 /* GoalPicker.swift in Sources */,
 				B630159F2C0745C00095A695 /* APIService.swift in Sources */,
 				B60C59DE2C0E777F008B98D4 /* MusicPermission.swift in Sources */,

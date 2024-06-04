@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct WelcomeView: View {
     @State private var openNextView: Bool = false
@@ -62,6 +63,8 @@ struct WelcomeView: View {
         }
     }
 }
+
+
 
 #Preview {
     WelcomeView()

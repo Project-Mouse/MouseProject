@@ -50,9 +50,6 @@ struct SummaryView: View {
             SummaryMetricView(title: "Total Distance", value: workout.totalCyclingDistance)
                 .foregroundStyle(.orange)
             
-            let water = workoutManager.water.formatted(.number.precision(.fractionLength(0))) + " oz"
-            SummaryMetricView(title: "Total Water", value: water)
-                .foregroundStyle(.blue)
             
             SummaryMetricView(title: "Total Energy", value: workout.totalEnergy)
                 .foregroundStyle(.pink)

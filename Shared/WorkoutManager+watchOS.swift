@@ -53,7 +53,6 @@ extension WorkoutManager {
         guard let decodedQuantity = try NSKeyedUnarchiver.unarchivedObject(ofClass: HKQuantity.self, from: data) else {
             return
         }
-        water += decodedQuantity.doubleValue(for: HKUnit.fluidOunceUS())
 
         let sampleDate = Date()
         Task {
